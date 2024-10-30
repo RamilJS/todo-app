@@ -1,50 +1,39 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ToDo App
+Тестовое задание на позицию Frontend Developer в Mindbox. Приложение позволяет управлять текущим списком задач (ToDo), поддерживая добавление, удаление, выполнение и фильтрацию задач.
 
-Currently, two official plugins are available:
+Стек технологий
+React с использованием React Hooks
+TypeScript для строгой типизации
+Redux Toolkit для управления состоянием
+Vite для сборки и запуска проекта
+Vitest и React Testing Library для написания тестов
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Запуск проекта
 
-## Expanding the ESLint configuration
+Клонируйте репозиторий:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+git clone <URL репозитория>
+cd todo-app
+Установите зависимости и запустите приложение:
 
-- Configure the top-level `parserOptions` property like this:
+npm install
+npm start
+Приложение должно автоматически открыться в браузере по адресу http://localhost:5173.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Скрипты
+npm start — запускает приложение в режиме разработки.
+npm run build — создает production-сборку приложения.
+npm run preview — запускает предварительный просмотр production-сборки.
+npm run lint — запускает линтер для проверки кода на соответствие стилям.
+npm test — запускает тесты.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Тестирование
+Проект включает тесты для ключевой функциональности (добавление, удаление, фильтрация задач и отметка задач как выполненных). Тесты написаны с использованием Vitest и React Testing Library. Чтобы запустить тесты, используйте команду:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+npm test
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Деплой
+Приложение опубликовано по адресу: , и его можно открыть для просмотра онлайн.
+
