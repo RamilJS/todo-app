@@ -14,7 +14,7 @@ Vitest и React Testing Library для написания тестов
 
 Клонируйте репозиторий:
 
-git clone <URL репозитория>
+git clone git@github.com:RamilJS/todo-app.git
 cd todo-app
 Установите зависимости и запустите приложение:
 
