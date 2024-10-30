@@ -10,12 +10,12 @@ Redux Toolkit для управления состоянием
 Vite для сборки и запуска проекта
 Vitest и React Testing Library для написания тестов
 
-Запуск проекта
+# Запуск проекта
 
 Клонируйте репозиторий:
-
 git clone git@github.com:RamilJS/todo-app.git
 cd todo-app
+
 Установите зависимости и запустите приложение:
 
 npm install
@@ -34,6 +34,6 @@ npm test — запускает тесты.
 
 npm test
 
-Деплой
+# Деплой
 Приложение опубликовано по адресу: https://todo-app-6ke2.vercel.app/ , и его можно открыть для просмотра онлайн.
 
