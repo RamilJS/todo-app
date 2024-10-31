@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addTodo, toggleTodo, clearCompleted } from './store/todosSlice';
-import { RootState } from './store/store';
+import { addTodo, toggleTodo, clearCompleted } from '../store/todosSlice';
+import { RootState } from '../store/store';
 import './App.css';
 
 type Filter = 'all' | 'active' | 'completed';
